@@ -43,6 +43,8 @@ margin: 0px auto;
 /*==========navigation=================*/
 .header {
     background-image: url(./../asserts/images/start-screen-gradient-background.jpg);
+    background-size: cover;
+    width: 100%;
     padding-top: 60px;
 }
 .container {
@@ -54,8 +56,8 @@ margin: 0px auto;
     align-items: center;
 }
 .logo a {
-    margin-bottom: 10px;
-    font-family: 'Georgia';
+margin-bottom: 10px;
+font-family: 'Georgia';
 font-style: normal;
 font-weight: 400;
 font-size: 32px;
@@ -64,7 +66,7 @@ letter-spacing: 0.06em;
 color: #F1CDB3;
 }
 .logo-small {
-    font-family: 'Arial';
+font-family: 'Arial';
 font-style: normal;
 font-weight: 400;
 font-size: 13px;
@@ -83,7 +85,7 @@ color: #FFFFFF;
     margin-right: 17px;
 }
 .navigation a {
-    font-family: 'Arial';
+font-family: 'Arial';
 font-style: normal;
 font-weight: 400;
 font-size: 15px;
@@ -101,11 +103,11 @@ color: #CDCDCD;
     margin-top: 60px;
 }
 .header-text {
-    width: 460px;
+width: 460px;
 height: 322px;
 }
 .header-title {
-    font-family: 'Georgia';
+font-family: 'Georgia';
 font-style: normal;
 font-weight: 400;
 font-size: 44px;
@@ -114,7 +116,7 @@ color: #FFFFFF;
 margin-bottom: 42px;
 }
 .header-text p {
-    font-family: 'Arial';
+font-family: 'Arial';
 font-style: normal;
 font-weight: 400;
 font-size: 15px;
@@ -123,7 +125,7 @@ color: #CDCDCD;
 margin-bottom: 42px;
 }
 .header-button {
-    font-family: 'Georgia';
+font-family: 'Georgia';
 font-style: normal;
 font-weight: 400;
 font-size: 17px;
@@ -143,7 +145,7 @@ transition: background-color 0.2s ease-in;
 .button {
 }
 .header-img {
-    width: 698px;
+width: 698px;
 height: 728px;
 }
 /*---------main-----------*/
@@ -160,7 +162,7 @@ height: 728px;
 .main-image {
 }
 .cozy-house {
-    width: 430px;
+width: 430px;
 height: 380px;
 }
 .cozy-house p {
@@ -174,8 +176,8 @@ height: 380px;
 }
 
 .cozy-house__title {
-    margin-bottom: 25px;
-    font-family: 'Georgia';
+margin-bottom: 25px;
+font-family: 'Georgia';
 font-style: normal;
 font-weight: 400;
 font-size: 35px;
@@ -190,8 +192,8 @@ color: #545454;
     align-items: center;
 }
 .friends-title {
-    margin-top: 60px;
-    font-family: 'Georgia';
+margin-top: 60px;
+font-family: 'Georgia';
 font-style: normal;
 font-weight: 400;
 font-size: 35px;
@@ -210,7 +212,7 @@ height: 90px;
     margin-bottom: 60px;
 }
 .friends-card__card {
-    width: 270px;
+width: 270px;
 height: 435px;
 background: #FAFAFA;
 border-radius: 9px;
@@ -218,7 +220,7 @@ border-radius: 9px;
 .friends-card__img {
 }
 .friends-card__title {
-    font-family: 'Georgia';
+font-family: 'Georgia';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
@@ -230,8 +232,8 @@ color: #545454;
 margin: 30px 0px 30px 0px ;
 }
 .friends-card__button {
-    cursor: pointer;
-    font-family: 'Georgia';
+cursor: pointer;
+font-family: 'Georgia';
 font-style: normal;
 font-weight: 400;
 font-size: 17px;
@@ -252,8 +254,8 @@ transition: background-color 0.2s ease-in;
     background-color: #ffffff75;
 }
 .friends-button {
-    cursor: pointer;
-    font-family: 'Georgia';
+cursor: pointer;
+font-family: 'Georgia';
 font-style: normal;
 font-weight: 400;
 font-size: 17px;
@@ -296,8 +298,8 @@ transition: background-color 0.2s ease-in;
     margin-bottom: 30px;
 }
 .help-title {
-    text-align: center;
-    font-family: 'Georgia';
+text-align: center;
+font-family: 'Georgia';
 font-style: normal;
 font-weight: 400;
 font-size: 35px;
@@ -326,7 +328,8 @@ margin-bottom: 50px;
 height: 282px;
 }*/
 .donation-text p {
-    font-family: 'Arial';
+width: 380px;
+font-family: 'Arial';
 font-style: italic;
 font-weight: 400;
 font-size: 12px;
@@ -334,8 +337,9 @@ line-height: 18px;
 color: #B2B2B2;
 }
 .donation-title {
-    margin-bottom: 30px;
-    font-family: 'Georgia';
+width: 517px;
+margin-bottom: 30px;
+font-family: 'Georgia';
 font-style: normal;
 font-weight: 400;
 font-size: 35px;
@@ -369,13 +373,6 @@ letter-spacing: 0.06em;
 color: #545454;
 margin-bottom: 30px;
 }
-.donation-button::before {
-    content: "";
-    width: 30px;
-height: 23px;
-background-image: url(./../asserts/icons/credit-card.svg);
- background: #292929;
-}
 /*------------------------footer------------*/
 .footer {
     background-image: url(./../asserts/images/footer-background.jpg);
@@ -385,10 +382,8 @@ background-image: url(./../asserts/icons/credit-card.svg);
     justify-content: space-between;
     align-items: center;
 }
-.footer-nav {
-}
 .footer-nav a {
-    margin-bottom: 40px;
+    
     font-family: 'Georgia';
 font-style: normal;
 font-weight: 400;
@@ -397,9 +392,15 @@ line-height: 115%;
 letter-spacing: 0.06em;
 color: #F1CDB3;
 }
-.footer-nav_title {
+.footer-nav li {
     margin-bottom: 40px;
-    font-family: 'Georgia';
+}
+.footer-nav img {
+    margin-right: 10px;
+}
+.footer-nav_title {
+margin-bottom: 40px;
+font-family: 'Georgia';
 font-style: normal;
 font-weight: 400;
 font-size: 35px;
@@ -407,8 +408,7 @@ line-height: 130%;
 letter-spacing: 0.06em;
 color: #FFFFFF;
 
-width: 278px;
-height: 90px;
+/*width: 278px;
+height: 90px;*/
 }
-.footer-nav_image {
-}
+/*------------------*/
