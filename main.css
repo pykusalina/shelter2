@@ -272,3 +272,143 @@ transition: background-color 0.2s ease-in;
 .friends-button:hover {
     background-color: #f1cdb35b;
 }
+/*-----------------help-----------------------*/
+
+.help {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+    text-align: center;
+}
+.help-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.help-block__title {
+    margin-bottom: 60px;
+}
+.help-block_card {
+    margin-right: 150px;
+}
+.help-block_card img {
+    margin-bottom: 30px;
+}
+.help-title {
+    text-align: center;
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #545454;
+margin-bottom: 50px;
+}
+/*------------------donation------------------*/
+.donation {
+    background-color: #F6F6F6;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.donation-image {
+}
+/*.donation-text {
+    width: 380px;
+height: 282px;
+}*/
+.donation-text p {
+    font-family: 'Arial';
+font-style: italic;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+color: #B2B2B2;
+}
+.donation-title {
+    margin-bottom: 30px;
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+align-items: center;
+letter-spacing: 0.06em;
+color: #545454;
+}
+.donation-sub-title {
+    margin-bottom: 30px;
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 110%;
+align-items: center;
+letter-spacing: 0.06em;
+color: #545454;
+}
+.donation-button {
+background: #F1CDB3;
+border-radius: 9px;
+
+
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+letter-spacing: 0.06em;
+color: #545454;
+margin-bottom: 30px;
+}
+.donation-button::before {
+    content: "";
+    width: 30px;
+height: 23px;
+background-image: url(./../asserts/icons/credit-card.svg);
+ background: #292929;
+}
+/*------------------------footer------------*/
+.footer {
+    background-image: url(./../asserts/images/footer-background.jpg);
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-nav {
+}
+.footer-nav a {
+    margin-bottom: 40px;
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+letter-spacing: 0.06em;
+color: #F1CDB3;
+}
+.footer-nav_title {
+    margin-bottom: 40px;
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+
+width: 278px;
+height: 90px;
+}
+.footer-nav_image {
+}
