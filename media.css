@@ -1,0 +1,83 @@
+/*-----header-----------*/
+@media screen and (max-width:768px) {
+    .navigation a {
+        font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 160%;
+    }
+    .logo a {
+        font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 110%;
+letter-spacing: 0.06em;
+    }
+}
+/*-----main-----------*/
+@media screen and (max-width:768px) {
+    .not-only {
+        display: flex;
+        flex-direction: column;
+    }
+    .not-only_text {
+        margin-bottom: 100px;
+    }
+}
+@media screen and (max-width:768px) {
+    .about {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .cozy-house {
+        margin-bottom: 80px;
+        }
+}
+@media screen and (max-width:768px) {
+    .friends-card__card:last-child {
+        display: none;
+        
+    }
+    .friends-card__card {
+        
+    }
+}
+@media screen and (max-width:768px) {
+    .help {
+        display: grid;
+        grid-template-rows: max-content;
+        text-align: center;
+        align-items: center;
+    }
+    .help-block {
+        width: 630px;
+        height: 449px;
+        align-items: center;
+    }
+    .help-block_card {
+        margin-right: 60px;
+    }
+}
+@media screen and (max-width:768px) {
+    .in-addtion {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+/*----footer--------*/
+@media screen and (max-width:768px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .footer-nav {
+display: flex;
+flex-direction: row;
+width: 708px;
+    }
+}
