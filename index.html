@@ -10,10 +10,28 @@
     <link href="C:\Users\User\Desktop\asserts\fonts\Georgia-PersonalUse.otf">
     <link href="C:\Users\User\Desktop\asserts\fonts\Arimo-Regular.ttf">
     <link href="C:\Users\User\Desktop\asserts\fonts\Arimo-Italic.ttf">
+    <link rel="stylesheet" href="./../shelter/pages/main/modal.css">
     <title>Document</title>
 </head>
 <body>
+    <!-----------burger--------------->
+    <div class="menu">
+        <nav class="menu-justify">
+            <li><a  class="menu-logo" href="#">Cozy House</a></li>
+            <li><a href="#">Our pets</a></li>
+            <li><a href="#">Help the shelter</a></li>
+            <li><a href="#">Contacts</a></li>
+        </nav>
+    </div>
+    <!------------------------------------------------------>
     <header class="header">
+        <!-------------------burger-------->
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!----------------------------------------->
         <div class="container">
             <div class="header-nav">
                 <h1 class="logo">
@@ -60,19 +78,21 @@
                 <div class="friends-title">Our friends who
                     are looking for a house</div>
                 <div class="friends-card">
-                    <div class="friends-card__card" id="card-1">
+                    <div class="friends-card__card" >
                     <div class="friends-card__img">
                         <img src="./../asserts/images/pets-jennifer.jpg">
                     </div>
                     <div class="friends-card__title">Katrine</div>
-                    <div class="friends-card__button"><button> more</button></div>
+                    
+                        <button data-path="one" class=" btn  friends-card__button">more</button>
+                    
                     </div>
                     <div class="friends-card__card" id="card-2">
                         <div class="friends-card__img">
                             <img src="./../asserts/images/pets-katrine.jpg">
                         </div>
                         <div class="friends-card__title">Jennifer</div>
-                        <div class="friends-card__button"><button> more</button></div>
+                        <button data-path="two" class="btn friends-card__button"> more</button>
                         </div>
                         <div class="friends-card__card" id="card-3">
                             <div class="friends-card__img">
@@ -196,5 +216,29 @@
 
         </div>
     </footer>
+    <!------------------popup-->
+     <div class="modals">
+         <div class="modal_overlay">
+             <div class="modal modal--1" data-target="one">
+            
+                 <div class="popup_text">
+                     <div class="popup_title">Jennifer</div>
+                     <div class="popup_subtitle">Dog - Labrador</div>
+                     <p>Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+                 </div>
+             </div>
+             <div class="modal modal--2" data-target="two">
+            
+                <div class="popup_text">
+                    <div class="popup_title">Jennifer</div>
+                    <div class="popup_subtitle">Dog - Labrador</div>
+                    <p>Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+                </div>
+         </div>
+     </div>
+
+    <!------popup----------->
+    <script src="./../shelter/pages/main/script.js"></script>
+    
 </body>
 </html>

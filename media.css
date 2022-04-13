@@ -1,5 +1,16 @@
+@media screen and (max-width:768px) {
+   /* .menu-icon-wrappe {
+        display: none;
+    } */
+}
+
 /*-----header-----------*/
 @media screen and (max-width:768px) {
+    .header-nav {
+        width: 220px;
+        display: flex;
+        justify-content: center;
+    }
     .navigation a {
         font-family: 'Arial';
 font-style: normal;

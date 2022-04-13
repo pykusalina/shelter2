@@ -1,6 +1,12 @@
-
+@media screen and (max-width: 320px) {
+  /* .menu-icon-wrappe  {
+       display: none;
+   } */
+   
+}
 /*------header--------*/
 @media screen and (max-width: 320px) {
+    
     .navigation {
         display: none;
     }

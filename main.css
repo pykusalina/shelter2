@@ -35,11 +35,103 @@ img {
     vertical-align: top;
 }
 body {
-font-family:Georgia, 'Times New Roman', Times, serif,
-Arial, Helvetica, sans-serif;
+    position: relative;
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-family:Arial, Helvetica, sans-serif;
 width: 1280px;
 margin: 0px auto;
 }
+/*------*/
+/*body {
+    background-color: #0288D1;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }*/
+  /*
+  .menu-icon-wrapper {
+  
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    position: relative;
+    
+  }
+  
+  .menu-icon {
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    top: 0px;
+    right: 0px;
+  }
+  
+  .menu-icon::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  
+  }
+  
+  .menu-icon::after {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  
+  }
+  
+  .menu-icon.menu-icon-active {
+    background-color: transparent;
+  }
+  
+  .menu-icon.menu-icon-active::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+  
+  .menu-icon.menu-icon-active::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+  
+
+  .menu-icon-list {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      bottom: 0px;
+      width: 400px;
+      background-color: #292929;
+      color: #fff;
+      margin: 0px;
+      padding: 0px;
+  }
+  .list-menu {
+display: none;
+  }
+  
+ /* .list-menu--visible {
+      display: block;
+  }
+*/
 /*==========navigation=================*/
 .header {
     background-image: url(./../asserts/images/start-screen-gradient-background.jpg);
@@ -282,19 +374,18 @@ transition: background-color 0.2s ease-in;
 /*-----------------help-----------------------*/
 
 .help {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 60px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 120px;
 }
 .help-block {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .help-block__title {
-    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
 }
 .help-block_card {
     margin-right: 150px;
@@ -416,4 +507,109 @@ color: #FFFFFF;
 /*width: 278px;
 height: 90px;*/
 }
-/*------------------*/
+/*---------popup--------------*/
+ /*.modals{
+    display: none;
+}*/
+ .modal_overlay {
+position: fixed;
+top: 0px;
+left: 0px;
+bottom: 0px;
+background-color: #29292986;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vw;
+width: 100%;
+opacity: 0;
+visibility: hidden;
+transition: all 0.3s ease-in-out;
+ }
+ .modal {
+background-color: #FFFFFF;
+width: 800px;
+height: 500px;
+display: flex;
+align-items: center;
+justify-content: center;
+display: none;
+ }
+ .modal--visible {
+     display: block;
+ }
+ .modal_overlay--visible {
+     opacity: 1;
+     visibility: visible;
+     transition: all 0.3s ease-in-out;
+ }
+ .modals--visible {
+     display: block;
+ }
+ /*------------burger-----------*/
+ @media screen and (max-width:320px) {
+ .menu-btn {
+position: relative;
+width: 30px;
+height: 30px;
+cursor: pointer;
+z-index: 2;
+overflow: hidden;
+ }
+ .menu-btn span {
+     position: absolute;
+     width: 30px;
+     height: 2px;
+     left: 0px;
+     top: 0px;
+     background-color: white;
+     transition: all 0.3s;
+ }
+ .menu-btn.active {
+     opacity: 0;
+ }
+ .menu-btn span:nth-of-type(2) {
+     top: calc(50% -5px) rotate(45deg);
+ }
+ .menu-btn span:nth-of-type(3) {
+    top: calc(50% +5px) rotate(-45deg);
+}
+ .menu {
+position: fixed;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 100%;
+padding: 15px;
+background-color: #4c4c4c7e;
+transform: translateX(-100%);
+transition: transform 0.5s;
+ }
+ .menu a {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 160%;
+    color: #CDCDCD;
+ }
+ .menu.active {
+     transform: translateX(0);
+ }
+ .menu-justify {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+.menu-logo {
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 110%;
+display: flex;
+align-items: center;
+letter-spacing: 0.06em;
+color: #F1CDB3;
+}
+}
