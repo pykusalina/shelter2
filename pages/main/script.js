@@ -16,3 +16,16 @@ menuBtn.addEventListener('click', function() {
 //document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible')
   //})  
 //});
+
+//--------modal-----------------------------------------------------------------------------
+const btns = document.querySelectorAll('.btn-modal');
+const modalOverlay = document.querySelector('.modal-overlay');
+
+
+btns.forEach(element => {
+  element.addEventListener('click', (e) => {
+let path = e.currentTarget.getAttribute('data-path');
+document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
+modalOverlay.classList.add('.modal-overlay--visible');
+  });
+});
